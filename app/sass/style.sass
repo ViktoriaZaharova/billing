@@ -1,0 +1,270 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #fff
+  border-radius: 32px
+  color: #212121
+
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+  width: fit-content
+  &:hover, &:focus
+    text-decoration: none
+    outline: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 27px 16px 9px
+  box-sizing: border-box
+  font-family: $comissioner-font
+  width: 100%
+  height: 56px
+  letter-spacing: -0.01em
+  font-size: 14px
+  color: $black
+  border: 1px solid rgba(0, 0, 0, 0.08)
+    radius: 6px
+  background: #ECECF8
+  transition: .3s ease
+  &::placeholder
+    color: $black
+  &:hover
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), #E4E4F5
+    outline: none
+    box-shadow: none
+
+.error-text
+  display: block
+  margin: 8px 0 0
+  color: #F02247
+
+
+.error-label
+  .input-title
+    color: #F02247
+  input
+    border-color: transparent
+    background: rgba(240, 34, 71, 0.15)
+
+label
+  display: block
+  width: 100%
+
+button, .btn
+  outline: none
+  transition: .3s ease
+  cursor: pointer
+  box-shadow: none
+  font-family: $default-font
+  padding: 0
+  margin: 0
+  border: none
+    radius: 0
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  height: 56px
+  border-radius: 8px
+  padding: 0 32px
+  font-size: 16px
+  font-weight: 600
+  letter-spacing: -0.01em
+
+.btn-arrow-icon
+  align-items: center
+  justify-content: center
+  margin-left: 6px
+  display: none
+  transition: .3s ease
+
+.btn-icon
+  display: flex
+  align-items: center
+  justify-content: center
+
+.btn-sm
+  height: 46px
+  font-size: 14px
+  padding: 0 32px
+
+.btn-accent
+  color: #FAFAFA
+  background: $accent
+
+  &:hover
+    background: $hover
+    color: #fff
+    box-shadow: 0 12px 72px rgba(28, 20, 80, 0.3)
+    .btn-arrow-icon
+      display: flex
+
+.btn-accent-v2
+  &:hover
+    background: #212121
+
+.btn-submit
+  &:hover
+    background: #212121
+    box-shadow: none
+
+.btn-white
+  font-size: 14px
+  font-weight: 600
+  background: #ffffff
+  .btn-icon
+    fill: $black
+  &:hover
+    box-shadow: 0 18px 80px rgba(0, 0, 0, 0.07), 0 4.02054px 17.869px rgba(0, 0, 0, 0.0417275), 0 1.19702px 5.32008px rgba(0, 0, 0, 0.0282725)
+    background: #DAEAF9
+
+.btn-black
+  background: $black
+  color: #fff
+  &:hover
+    box-shadow: 0 18px 80px rgba(0, 0, 0, 0.07), 0 4.02054px 17.869px rgba(0, 0, 0, 0.0417275), 0 1.19702px 5.32008px rgba(0, 0, 0, 0.0282725)
+    background: $accent
+    color: #fff
+
+.btn-icon-user
+  width: 11px
+  min-width: 11px
+  height: 14px
+  margin-right: 6px
+
+.svg-icon
+  display: inline-block
+  width: 100%
+  height: 100%
+
+strong, b
+  font-weight: bold
+  display: inline-block
+
+ul, ol
+  padding: 0 0 0 20px
+
+.my-ul
+  list-style: none
+  padding: 0
+
+
+.container
+  max-width: 1228px
+  padding: 0 12px
+
+.row
+  margin: 0 -12px
+
+.logo
+  font-family: $font
+  text-transform: uppercase
+  letter-spacing: -0.01em
+  font-style: italic
+  font-size: 20px
+  font-weight: 600
+  color: #000
+  &:hover
+    color: $accent
+
+.color-accent
+  color: $accent
+
+h1
+  letter-spacing: -0.01em
+  font-size: 40px
+  font-weight: 500
+  margin: 0 0 48px
+  width: 100%
+
+h2
+  letter-spacing: -0.01em
+  font-size: 36px
+  font-weight: 500
+  width: 100%
+  margin: 0 0 48px
+  line-height: 120%
+
+.m-100
+  margin: 100px 0
+
+.d-inline
+  display: inline-block
+
+.wrapper
+  height: 100%
+  display: flex
+  flex-direction: column
+
+.content
+  flex: 1 0 auto
+
+footer
+  flex: 0 0 auto

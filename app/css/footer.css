@@ -1,0 +1,75 @@
+/*==========  footer  ==========*/
+footer {
+  padding: 32px 0; }
+  footer .link-tg {
+    margin: 0 auto 0 0; }
+
+.copyright, .link-document {
+  letter-spacing: -0.01em;
+  font-size: 14px;
+  color: #718692;
+  font-family: "Commissioner", sans-serif; }
+
+.link-document {
+  margin-left: 32px; }
+  .link-document:hover {
+    color: #5138EE; }
+
+.link-tg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: -0.03em;
+  font-size: 16px;
+  font-weight: 600;
+  color: #212121; }
+  .link-tg:hover {
+    color: #039BE5; }
+  .link-tg__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 6px 0 0;
+    width: 24px;
+    height: 24px; }
+
+.developer {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: -0.004em;
+  font-size: 14px;
+  font-weight: 500;
+  color: #212121;
+  font-family: "Commissioner", sans-serif; }
+  .developer:hover {
+    color: #5138EE; }
+
+.developer-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 5px; }
+
+/*==========  footer end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/

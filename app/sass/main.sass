@@ -1,0 +1,481 @@
+@import "vars"
+
+/*==========  section home ==========*/
+.home
+  padding: 24px
+  background: #fff
+  .btn
+    max-width: 230px
+    width: 100%
+
+.home-wrapper
+  background: radial-gradient(98.38% 201.1% at 98.38% 1.66%, #FFFFFF 0%, #EAEDFF 24.48%, #F1F1FF 78.12%, #F7F7FF 100%)
+  border-radius: 32px
+  width: 100%
+  position: relative
+  overflow: hidden
+  padding: 179px 0 29px
+  &:before
+    content: ''
+    position: absolute
+    width: 1024px
+    height: 992px
+    background: url("../img/home-bg.svg") no-repeat center
+      size: contain
+    top: -255px
+    right: -340px
+
+.toggle-icon
+  position: relative
+  width: 46px
+  height: 33px
+  box-shadow: inset 0px 0px 8px rgba(66, 65, 74, 0.1)
+  border-radius: 32px
+  background: #E4EAF1
+  margin: 0 0 -5px
+  display: inline-block
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    right: 5px
+    transform: translate(0,-50%)
+    border-radius: 50%
+    background: $accent
+    width: 24px
+    height: 24px
+
+.uptime
+  position: relative
+  letter-spacing: -0.005em
+  font-family: $comissioner-font
+  font-size: 12px
+  font-weight: 600
+  color: #333
+  display: flex
+  align-items: center
+  margin: 135px 0 0 -16px
+  &:hover
+    .uptime-icon
+      background: rgba(83, 208, 51, 0.1)
+      &:before
+        background: rgba(83, 208, 51, 0.2)
+      &:after
+        background: rgba(#53D033, .4)
+
+.uptime-icon
+  position: relative
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 16px
+  height: 16px
+  min-width: 16px
+  margin: 0 5px 0 0
+  background: rgba(83, 208, 51, 0.15)
+  transition: .3s ease
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 11px
+    height: 11px
+    border-radius: 50%
+    background: rgba(83, 208, 51, 0.3)
+  &:after
+    background: #53D033
+    width: 5px
+    height: 5px
+
+.btn-scroll-down
+  position: absolute
+  bottom: 0
+  left: 50%
+  transform: translate(-50%,0)
+
+.home-image
+  position: absolute
+  right: 27px
+  bottom: 0
+  max-width: 649px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+/*==========  section home end  ==========*/
+
+
+
+/*==========  section advantages ==========*/
+.advantages
+  margin: 76px 0 22px
+
+.advantages-row
+  margin: 0 -20px
+
+.col-20
+  padding: 0 20px
+  margin: 0 0 40px
+  width: 20%
+
+.advantages-box
+  border-radius: 12px
+  background: #F4F4FF
+  width: 100%
+  height: 100%
+  padding: 24px 24px 48px
+  letter-spacing: -0.01em
+  font-size: 20px
+  font-weight: 500
+  color: #000
+  line-height: 140%
+  transition: .3s ease
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 0 18px
+    width: 64px
+    height: 64px
+    background: #DADAF9
+    border-radius: 8px
+    padding: 10px
+  &:hover
+    box-shadow: 0px 54px 80px rgba(0, 0, 0, 0.07), 0px 6.76164px 10.0172px rgba(0, 0, 0, 0.035)
+    background: #fff
+  
+/*==========  section advantages end  ==========*/
+
+/*==========  section methods ==========*/
+.methods
+  h2
+    margin: 0 0 40px
+
+.icon-arrow-down
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  margin: 0 5px
+  background: #fff
+  border-radius: 50%
+  padding: 8px
+  fill: $black
+  box-shadow: 0 54px 80px rgba(0, 0, 0, 0.07), 0px 6.76164px 10.0172px rgba(0, 0, 0, 0.035)
+  width: 32px
+  height: 32px
+  min-width: 32px
+
+.icon-arrow-up
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  margin: 0 5px
+  border-radius: 50%
+  fill: #fff
+  width: 32px
+  height: 32px
+  min-width: 32px
+  background: #5138EE
+  padding: 7px
+  svg
+    transform: rotate(180deg)
+
+
+.methods-wrapper
+  width: 100%
+  background: #F4F4FF
+  border-radius: 32px
+  padding: 64px 139px 83px 142px
+
+.methods-box
+  width: 100%
+  height: 100%
+  background: #ffffff
+  padding: 24px 22px 24px 24px
+  letter-spacing: -0.01em
+  font-weight: 500
+  font-family: $comissioner-font
+  border-radius: 12px
+  transition: .3s ease
+  &:hover
+    box-shadow: 0px 54px 80px rgba(0, 0, 0, 0.07), 0px 6.76164px 10.0172px rgba(0, 0, 0, 0.035)
+  &__icon
+    margin: 0 0 18px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 48px
+    height: 48px
+
+.tab-content
+  margin: 38px 0 0
+
+.nav-tabs
+  border: none
+  .nav-item
+    margin: 0 32px 0 0
+    &:last-child
+      margin: 0
+  .nav-link
+    padding: 0 0 8px
+    color: #718692
+    font-size: 20px
+    font-weight: 500
+    letter-spacing: -0.01em
+    border: none
+      radius: 0
+      bottom: 2px solid transparent
+    &.active
+      border-color: $accent
+      background: transparent
+      color: #212121
+
+/*==========  section methods end  ==========*/
+
+
+
+/*==========  section instructions ==========*/
+.instructions
+  h2
+    margin: 0 auto 56px
+
+.instructions-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  padding: 0 60px
+
+.instructions-box
+  text-align: center
+  letter-spacing: -0.01em
+  font-size: 15px
+  max-width: 233px
+  position: relative
+  &:first-child
+    &:after
+      right: -40px
+  &:nth-child(2)
+    &:after
+      right: -66px
+  &:nth-child(3)
+    &:after
+      right: -78px
+  &:last-child
+    &:after
+      display: none
+  &:after
+    content: ''
+    width: 48px
+    height: 2px
+    background: url("../img/line.svg") no-repeat center
+      size: 100%
+    display: inline-block
+    position: absolute
+    top: 143px
+    right: -50px
+  .btn
+    height: 46px
+    font-size: 14px
+    margin: 24px auto 0
+  &__icon
+    position: relative
+    height: 204px
+    display: flex
+    align-items: flex-end
+    justify-content: center
+  &__number
+    position: absolute
+    left: 50%
+    transform: translate(-50%,0)
+    bottom: -12px
+    display: flex
+    align-items: center
+    justify-content: center
+    background: #fff
+    border-radius: 50%
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15)
+    width: 32px
+    height: 32px
+    text-align: center
+    letter-spacing: -0.01em
+    font-size: 20px
+    font-weight: 700
+    font-family: $comissioner-font
+  p
+    font-family: $comissioner-font
+    line-height: 140%
+  h3
+    margin: 20px auto 12px
+    letter-spacing: -0.01em
+    font-size: 24px
+    font-weight: 500
+
+/*==========  section instructions end  ==========*/
+
+
+/*==========  section callback ==========*/
+.callback
+  margin: 0 0 184px
+  h2
+    font-size: 32px
+    font-weight: 700
+    letter-spacing: -0.02em
+
+.callback-wrapper
+  box-shadow: 0px 54px 80px rgba(0, 42, 152, 0.08), 0px 12.0616px 17.869px rgba(0, 42, 152, 0.0476886), 0px 3.59106px 5.32008px rgba(0, 42, 152, 0.0323114)
+  background: #F4F4FF
+  border-radius: 32px
+  overflow: hidden
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+
+.callback-content
+  width: calc(100% - 430px)
+  position: relative
+  padding: 64px 100px 26px
+
+.form-callback
+  max-width: 372px
+  width: 100%
+  button
+    width: 100%
+    height: 56px
+    font-size: 14px
+    border-radius: 6px
+  label
+    margin: 0 0 18px
+    position: relative
+
+
+
+.input-title
+  display: block
+  color: #718692
+  font-size: 14px
+  letter-spacing: -0.01em
+  font-family: $comissioner-font
+  line-height: 140%
+  position: absolute
+  left: 16px
+  top: 9px
+
+.consent
+  margin: 24px 0 0
+  letter-spacing: -0.02em
+  font-size: 12px
+  color: #0E1019
+  font-family: $comissioner-font
+  a
+    color: #718692
+    &:hover
+      color: $accent
+
+
+
+.time-box
+  position: absolute
+  letter-spacing: -0.02em
+  font-size: 18px
+  line-height: 20px
+  font-weight: bold
+  text-align: center
+  padding: 10px 0 20px
+  top: 50%
+  transform: translate(0,-50%)
+  right: -65px
+  width: 130px
+  height: 130px
+  border-radius: 50%
+  background: url("../img/time-bg.svg") no-repeat center
+    size: cover
+  z-index: 1
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+  color: #fff
+  img
+    margin: 0 auto -10px
+
+
+.callback-image
+  width: 430px
+  overflow: hidden
+  background: url("../img/callback-decor.svg") no-repeat center #5138EE
+    size: cover
+  padding: 18px 0 0
+  display: flex
+  align-items: flex-end
+  justify-content: flex-start
+  img
+    min-width: 896px
+    margin: 0 0 -290px -184px
+
+/*==========  section callback end  ==========*/
+
+
+
+/*==========  section 404 ==========*/
+.wrapper-page
+  background: rgb(244,244,255)
+  height: 100vh
+
+.error-page
+  height: 100%
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  .btn
+    margin: 0 auto
+  h1
+    display: flex
+    align-items: center
+    font-size: 96px
+    font-weight: 500
+    text-align: center
+    width: fit-content
+    margin: 0 auto
+    position: relative
+    &:before, &:after
+      content: ''
+      position: absolute
+      width: 21px
+      height: 21px
+      background: url("../img/star.svg") no-repeat center
+        size: 100%
+    &:before
+      right: -56px
+      top: -17px
+    &:after
+      left: -66px
+      bottom: 20px
+    span
+      font-style: italic
+
+
+.subtitle
+  text-align: center
+  margin: 0 auto 32px
+  font-size: 24px
+  font-weight: 500
+  letter-spacing: -0.01em
+/*==========  section 404 end  ==========*/
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/

@@ -1,0 +1,115 @@
+@import "vars"
+
+/*==========  header  ==========*/
+header
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 3
+  padding: 48px 0
+
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 13px
+  font-weight: 600
+  font-family: $comissioner-font
+  margin: 0 auto 0 70px
+  li
+    margin: 0 31px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: $black
+      padding: 0 0 5px
+      border-bottom: 2px solid rgba(51, 51, 51, 0.1)
+      &:hover
+        color: $accent
+        border-color: transparent
+
+
+.btn-user
+  margin-right: -55px
+  max-width: 118px
+  height: 40px
+/*==========  header end  ==========*/
+
+
+
+/*==========  header-top  ==========*/
+.header-top
+  transition: .4s ease
+  position: fixed
+  left: 0
+  top: -100%
+  width: 100%
+  background: #fff
+  padding: 17px 24px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  z-index: 5
+  .logo
+    margin: 0 auto 0 0
+  .menu
+    margin: 0
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+  .btn-user
+    margin: 0 0 0 24px
+    .btn-icon-user
+      fill: #fff
+
+
+.header-top.fixed
+  top: 0
+
+.overlay
+  position: fixed
+  z-index: 2
+  width: 100%
+  height: 100%
+  background: rgba(54, 51, 73, 0.55)
+  display: none
+  left: 0
+  top: 0
+
+.btn-burger
+  width: 48px
+  height: 48px
+  position: relative
+  background: #fff
+  display: none
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  border-right: 1px solid #F0F2F5
+  margin-right: 18px
+  span
+    transition: .3s ease
+    width: 24px
+    height: 1.5px
+    background: #0E1019
+    display: block
+    margin: 0 0 3px
+    &:last-child
+      margin: 0
+  &.click
+    border-color: transparent
+    background: #212121
+    span
+      background: #FAFAFA
+      margin: 0
+      &:last-child
+        margin: -1px 0 0 0
+        transform: rotate(-45deg)
+      &:first-child
+        transform: rotate(45deg)
+
+
+/*==========  header-top end  ==========*/

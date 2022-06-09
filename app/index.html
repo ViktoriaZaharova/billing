@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Billing</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="overlay"></div>
+
+  <div class="content">
+    <div class="header-top">
+      <div class="btn-burger">
+        <span></span>
+        <span></span>
+      </div>
+
+      <a href="index.html" class="logo">Billing</a>
+      <ul class="menu my-ul">
+        <li class="d-block d-sm-none"><a href="#" class="link-tg">
+          <span class="link-tg__icon"><img src="img/tg.svg" alt=""></span>
+          <span class="link-tg__text">Telegram</span>
+        </a></li>
+        <li><a href="#advantages" class="go_to">Преимущества</a></li>
+        <li><a href="#methods" class="go_to">Методы</a></li>
+        <li><a href="#instructions" class="go_to">Как подключиться</a></li>
+        <li><a href="#callback" class="go_to">Задать вопрос</a></li>
+      </ul>
+      <a href="#" class="link-tg d-none d-sm-flex">
+        <span class="link-tg__icon"><img src="img/tg.svg" alt=""></span>
+        <span class="link-tg__text">Telegram</span>
+      </a>
+      <a href="#" class="btn btn-black btn-user">
+              <span class="btn-icon btn-icon-user"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#user"></use></svg></span>
+        <span class="btn-text">Войти</span>
+      </a>
+    </div>
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+
+
+            <a href="index.html" class="logo">Billing</a>
+
+            <ul class="menu my-ul">
+              <li><a href="#advantages" class="go_to">Преимущества</a></li>
+              <li><a href="#methods" class="go_to">Методы</a></li>
+              <li><a href="#instructions" class="go_to">Как подключиться</a></li>
+              <li><a href="#callback" class="go_to">Задать вопрос</a></li>
+            </ul>
+
+            <a href="#" class="btn btn-white btn-user">
+              <span class="btn-icon btn-icon-user"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#user"></use></svg></span>
+              <span class="btn-text">Войти</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="home">
+      <div class="home-wrapper">
+        <a href="#advantages" class="btn-scroll-down go_to"><img src="img/mouse.svg" alt=""></a>
+
+        <div class="home-image"><img src="img/home-img.png" alt=""></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <h1>Приём <span class="toggle-icon"></span> онлайн-платежей для всех! Поможем <br>
+                с интеграцией <br>
+                и подберем для вас <span class="color-accent">комфортные условия</span></h1>
+
+              <a href="#callback" class="btn btn-accent go_to">Подключиться <span class="btn-arrow-icon"><img
+                  src="img/arrow-right-btn.svg" alt=""></span></a>
+
+              <div class="uptime">
+                <div class="uptime-icon"></div>
+                Uptime 99.8%
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="advantages" id="advantages">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Преимущества сервиса</h2>
+          </div>
+        </div>
+
+        <div class="row advantages-row">
+          <div class="col-20">
+            <div class="advantages-box">
+              <div class="advantages-box__icon"><img src="img/adv-icon1.svg" alt=""></div>
+              <div class="advantages-box__body">
+                <p>Работаем
+                  с High-Risk
+                  проектами</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-20">
+            <div class="advantages-box">
+              <div class="advantages-box__icon"><img src="img/adv-icon2.svg" alt=""></div>
+              <div class="advantages-box__body">
+                <p>Большое
+                  количество
+                  методов приёма
+                  и вывода</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-20">
+            <div class="advantages-box">
+              <div class="advantages-box__icon"><img src="img/adv-icon3.svg" alt=""></div>
+              <div class="advantages-box__body">
+                <p>Массовые
+                  выплаты</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-20">
+            <div class="advantages-box">
+              <div class="advantages-box__icon"><img src="img/adv-icon4.svg" alt=""></div>
+              <div class="advantages-box__body">
+                <p>Конверсия <br>
+                  > 80%</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-20">
+            <div class="advantages-box">
+              <div class="advantages-box__icon"><img src="img/adv-icon5.svg" alt=""></div>
+              <div class="advantages-box__body">
+                <p>Отсутствие
+                  идентификации
+                  (KYC)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-20">
+            <div class="advantages-box">
+              <div class="advantages-box__icon"><img src="img/adv-icon6.svg" alt=""></div>
+              <div class="advantages-box__body">
+                <p>Поможем
+                  с подключением</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-20">
+            <div class="advantages-box">
+              <div class="advantages-box__icon"><img src="img/adv-icon7.svg" alt=""></div>
+              <div class="advantages-box__body">
+                <p>Личный
+                  менеджер</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-20">
+            <div class="advantages-box">
+              <div class="advantages-box__icon"><img src="img/adv-icon8.svg" alt=""></div>
+              <div class="advantages-box__body">
+                <p>Круглосуточная
+                  поддержка</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-20">
+            <div class="advantages-box">
+              <div class="advantages-box__icon"><img src="img/adv-icon9.svg" alt=""></div>
+              <div class="advantages-box__body">
+                <p>Быстрая
+                  интеграция</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-20">
+            <div class="advantages-box">
+              <div class="advantages-box__icon"><img src="img/adv-icon10.svg" alt=""></div>
+              <div class="advantages-box__body">
+                <p>Бесперебойная
+                  работа сервиса</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="methods" id="methods">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="methods-wrapper">
+              <h2>Методы<span class="icon-arrow-up"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>приёма и<span
+                  class="icon-arrow-down"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>вывода
+              </h2>
+
+
+              <ul class="nav nav-pills nav-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                     aria-controls="pills-home" aria-selected="true">Принимаем</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                     aria-controls="pills-profile" aria-selected="false">Выплачиваем</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="methods-box">
+                        <div class="methods-box__icon"><img src="img/wallet-icon1.svg" alt=""></div>
+                        <div class="methods-box__body">
+                          <p>Банковские карты</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="methods-box">
+                        <div class="methods-box__icon"><img src="img/wallet-icon2.svg" alt=""></div>
+                        <div class="methods-box__body">
+                          <p>QIWI</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="methods-box">
+                        <div class="methods-box__icon"><img src="img/wallet-icon3.svg" alt=""></div>
+                        <div class="methods-box__body">
+                          <p>USDT</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="methods-box">
+                        <div class="methods-box__icon"><img src="img/wallet-icon4.svg" alt=""></div>
+                        <div class="methods-box__body">
+                          <p>Bitcoin, Ethereum, Litecoin,
+                            Bitcoin Cash, Dash, Zcash</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="methods-box">
+                        <div class="methods-box__icon"><img src="img/wallet-icon1.svg" alt=""></div>
+                        <div class="methods-box__body">
+                          <p>Банковские карты</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="methods-box">
+                        <div class="methods-box__icon"><img src="img/wallet-icon2.svg" alt=""></div>
+                        <div class="methods-box__body">
+                          <p>QIWI</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="methods-box">
+                        <div class="methods-box__icon"><img src="img/wallet-icon3.svg" alt=""></div>
+                        <div class="methods-box__body">
+                          <p>USDT (TRC20, ERC20)</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="methods-box">
+                        <div class="methods-box__icon"><img src="img/wallet-icon4.svg" alt=""></div>
+                        <div class="methods-box__body">
+                          <p>Bitcoin</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="instructions m-100" id="instructions">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center">Всего 4 шага для <span class="toggle-icon"></span> <span class="color-accent">подключения</span>
+            </h2>
+          </div>
+
+          <div class="col-12">
+            <div class="instructions-wrapper">
+              <div class="instructions-box">
+                <div class="instructions-box__icon"><img src="img/step1.svg" alt="">
+                  <div class="instructions-box__number">1</div>
+                </div>
+                <div class="instructions-box__body">
+                  <h3>Оставьте заявку</h3>
+                  <p>Укажите ваш сайт <br>
+                    и контактные данные</p>
+                  <a href="#callback" class="btn btn-accent btn-accent-v2 go_to">Подключиться </a>
+                </div>
+              </div>
+
+              <div class="instructions-box">
+                <div class="instructions-box__icon"><img src="img/step2.svg" alt="">
+                  <div class="instructions-box__number">2</div>
+                </div>
+                <div class="instructions-box__body">
+                  <h3>Дождитесь ответа</h3>
+                  <p>Мы не заставим вас <br>
+                    долго ждать</p>
+                </div>
+              </div>
+
+              <div class="instructions-box">
+                <div class="instructions-box__icon"><img src="img/step3.svg" alt="">
+                  <div class="instructions-box__number">3</div>
+                </div>
+                <div class="instructions-box__body">
+                  <h3>Подключитесь</h3>
+                  <p>Если вам потребуется <br>помощь, Billing всегда <br>
+                    на связи!</p>
+                </div>
+              </div>
+
+              <div class="instructions-box">
+                <div class="instructions-box__icon"><img src="img/step4.svg" alt="">
+                  <div class="instructions-box__number">4</div>
+                </div>
+                <div class="instructions-box__body">
+                  <h3>Принимайте платежи</h3>
+                  <p>Выгодные условия <br>помогут зарабатывать <br>больше</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="callback" id="callback">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="callback-wrapper">
+              <div class="callback-content">
+                <h2>Заявка на подключение</h2>
+
+                <form method="post" class="form-callback">
+                  <label>
+                    <span class="input-title">Адрес сайта</span>
+                    <input type="text" placeholder="https://billing.com" name="web">
+                  </label>
+                  <label>
+                    <span class="input-title">Как к вам обращаться</span>
+                    <input type="text" placeholder="Раушан" name="name">
+                  </label>
+                  <label class="error-label">
+                    <span class="input-title">E-mail или Telegram</span>
+                    <input type="text" placeholder="@retry" name="social">
+                    <span class="error-text">Некорректный адрес сайта</span>
+                  </label>
+
+
+                  <button type="submit" class="btn btn-accent btn-submit">Отправить заявку
+                    <span class="btn-arrow-icon"><img src="img/arrow-right-btn.svg" alt=""></span></button>
+
+                  <div class="consent">Нажимая кнопку «Отправить заявку», вы подтверждаете, что
+                    согласны на <a href="#" class="d-inline" target="_blank">обработку персональных данных</a></div>
+                </form>
+
+                <div class="time-box">
+                  <img src="img/clock.svg" alt="">
+                  <span>Быстрая
+интеграция</span>
+                </div>
+              </div>
+
+              <div class="callback-image"><img src="img/macbook.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center flex-wrap">
+          <a href="#" class="link-tg">
+            <span class="link-tg__icon"><img src="img/tg.svg" alt=""></span>
+            <span class="link-tg__text">Telegram</span>
+          </a>
+
+          <div class="copyright"> © 2022 Billing.com</div>
+
+          <a href="#" class="link-document" target="_blank">Правовая информация</a>
+          <a href="#" class="link-document" target="_blank">Договор оферты</a>
+
+          <a href="#" class="developer">
+            <span>Designed by</span>
+            <span class="developer-icon"><img src="img/developer.svg" alt=""></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="js/common.js"></script>
+
+</body>
+
+</html>
