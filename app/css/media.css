@@ -4,6 +4,10 @@
   .btn-user {
     margin: 0; } }
 
+@media only screen and (max-width: 1260px) {
+  header {
+    padding: 48px 24px; } }
+
 @media only screen and (max-width: 1200px) {
   .instructions-wrapper {
     padding: 0; }
